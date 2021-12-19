@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'proto_believe.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'proto_believe',
+        'USER': 'postgres',
+        'PASSWORD': 'Welcome@2020',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
